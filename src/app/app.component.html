@@ -1,0 +1,10 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <a routerLink="/">hotel name</a>
+      <span class="fill-space"></span>
+      <button mat-raised-button color="warn" *ngIf="w.location.pathname === '/staff'" routerLink="/admin/guest-form-builder">Modify check in/out forms</button>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
